@@ -1,0 +1,114 @@
+main header h1::before {
+    content: "\f099";
+    font-family: "FontAwesome";
+    color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202124;
+    color: #e8eaed;
+}
+
+main {
+    border: 1px solid #3c4043;
+    border-radius: 8px;
+    height: 270px;
+    width: 650px;
+    position: relative;
+}
+
+.header__row {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    border-bottom: 1px solid #3c4043;
+}
+
+.header__col {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__col span {
+    cursor: pointer;
+}
+
+.header__col--ativo {
+    border-bottom: 1px solid #8ab4f8;
+}
+
+.cronometro {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cronometro span {
+    /* font => 36px */
+    font-size: 62px;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(189, 193, 198, 0.6);
+    font-weight: 500;
+}
+
+/* .cronometro span::first-letter {
+    font-size: 41px;
+} */
+
+.footer__row {
+    width: 100% !important;
+    height: 62px;
+    padding: 0 15px;
+    border-top: 1px solid #3c4043;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 6px 8px;
+    height: 30px;
+    width: 72px;
+}
+
+.start,
+.stop {
+    background: #8ab4f8;
+    border: 1px solid #8ab4f8;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.botao--desativado {
+    display: none;
+}
+
+.reset {
+    background: #bdc1c6;
+    border: 1px solid #212327;
+    cursor: pointer;
+}
+
+.fa-expand {
+    cursor: pointer;
+}
