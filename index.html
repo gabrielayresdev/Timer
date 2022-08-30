@@ -16,14 +16,25 @@
 <body>
     <main>
         <div class="header__row">
-            <div class="header__col">
+            <div class="header__col header--left">
                 <span class="timer">Timer</span>
             </div>
-            <div class="header__col header__col--ativo">
+            <div class="header__col header--right header__col--ativo">
                 <span class="stopwatch">Stopwatch</span>
             </div>
         </div>
-        <div class="cronometro">
+        <div class="countdown">
+            <ul>
+                <span class="span-countdown">00</span>
+                <li>h</li>
+                <span class="span-countdown">05</span>
+                <li>m</li>
+                <span class="span-countdown">00</span>
+                <li>s</li>
+            </ul>
+        </div>
+
+        <div class="cronometro timer--ativo">
             <span class="span-timer">0.0</span>
         </div>
         <div class="footer__row">
