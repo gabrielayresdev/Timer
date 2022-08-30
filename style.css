@@ -52,18 +52,46 @@ main {
     border-bottom: 1px solid #8ab4f8;
 }
 
-.cronometro {
+.cronometro,
+.countdown {
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
+}
+
+.countdown li,
+.countdown span {
+    display: inline-block;
+}
+
+
+.countdown span {
+    font-size: 62px;
+
+    font-weight: 500;
+}
+
+.countdown span:first-of-type {
+    padding-left: 20px;
+}
+
+.countdown li {
+    margin-right: 8px;
+    list-style-type: none;
+    font-size: 28px;
+}
+
+.timer--ativo {
+    display: block;
 }
 
 .cronometro span {
     /* font => 36px */
     font-size: 62px;
     padding: 10px 16px;
-    border-bottom: 1px solid rgba(189, 193, 198, 0.6);
+    /* border-bottom: 1px solid rgba(189, 193, 198, 0.6); */
     font-weight: 500;
 }
 
